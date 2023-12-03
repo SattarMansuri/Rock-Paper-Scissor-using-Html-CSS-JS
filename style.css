@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(137, 193, 94, 1);
+    font-family: Roboto;
+}
+
+/* Score Board Area */
+.score_board{
+    position: absolute;
+    top: 5vh;
+    left: 28vw;
+    height: 18vh;
+    width: 45vw;
+    border: 2px solid white;
+    border-radius: 15px;
+    align-items: center;   
+    display: flex;
+}
+.name{
+    width: 20vw;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 900;
+    padding-left: 2vh;
+}
+.score{
+    width: 25vw;
+    display: flex;
+    justify-content: space-evenly;
+    color: rgba(101, 101, 101, 1);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.comp{
+    height: 16vh;
+    width: 10vw;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+}
+.self{
+    height: 16vh;
+    width: 10vw;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center; 
+}
+.score span{
+    height: 8vh;
+    width: 8vw;
+    border: 0cap;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-left: 0.9vw;
+    font-weight: 600;
+    color: black;   
+}
+
+/* Player Selection Area */
+.rock_bg{
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    height: 25vh;
+    width: 13vw;
+    }
+.rock{
+    position: absolute;
+    top: 36.5vh;
+    left: 33.5vw;  
+    height: 10vh;
+    width: 6vw
+}
+.scissor_bg{
+    position: absolute;
+    top: 30vh;
+    right: 30vw;
+    height: 25vh;
+    width: 13vw;
+}
+.scissor{
+    position: absolute;
+    left: 61.5vw;
+    top: 36vh;
+    height: 10vh;
+    width: 5vw
+}
+.paper_bg{
+    position: absolute;
+    left: 44vw;
+    top: 65vh;
+    height: 25vh;
+    width: 13vw;
+}
+.paper{
+    position: absolute;
+    left: 47.5vw;
+    top: 71vh;
+    height: 12vh;
+    width: 6vw
+}
+#line1{
+    position: absolute;
+    left: 42vw;
+    top: 41vh;
+    height: 3.7vh;
+    width: 16vw;
+}
+#line2{
+    position: absolute;
+    left: 54vw;
+    top: 50vh;
+    height: 21vh;
+    width: 7vw;
+}
+#line3{
+    position: absolute;
+    left: 39.5vw;
+    top: 49.5vh;
+    height: 23.3vh;
+    width: 7vw;
+}
+.youPicked{
+    position: absolute;
+    top: 32.5vh;
+    left: 27.5vw
+     }
+
+/* Computer Slecet Area */
+.CompRock_bg{
+    position: fixed;
+    height: 25vh;
+    width: 13vw;
+    top: 39.3vh;
+    left: 63vw;
+}
+.CompRock{
+    position: absolute;
+    right: 27.5vw;
+    top: 46vh;
+    height: 10vh;
+    width: 6vw
+ }
+ .CompPaper_bg{
+    position: fixed;
+    top: 39.3vh;
+    left: 63vw;
+    height: 25vh;
+    width: 13vw;
+ }
+ .CompPaper{
+    position: absolute;
+    top: 46vh;
+    right: 27.5vw;
+    height: 12vh;
+    width: 6vw;
+ }
+ .CompScissors_bg{
+    position: fixed;
+    top: 39.3vh;
+    left: 63vw;
+    height: 25vh;
+    width: 13vw;
+ }
+ .CompScissors{
+    position: absolute;
+    right: 27.5vw;
+    top: 46vh;
+    height: 10vh;
+    width: 5vw;
+ }
+ .pcPicked{
+    position: absolute;
+    top: 33vh;
+    right: 26vw
+}
+
+/* All Buttons Area */
+.rules button{
+    height: 7vh;
+    width: 9vw;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(137, 193, 94, 1);
+    color: white;
+    position: absolute;
+    right: 6vw;
+    bottom: 5vh;
+}
+.Cancel button{
+    border: 3px solid white;
+    border-radius: 20px;
+    height: 6vh;
+    width: 3vw;
+    position: relative;
+    bottom: 55vh;
+    left: 10vw;
+    background-color: red;
+}
+.next button{
+    height: 7vh;
+    width: 9vw;
+    font-size: 1.5rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: rgba(137, 193, 94, 1);
+    color: white;
+    position: absolute;
+    right: 19vw;
+    bottom: 5vh;
+}
+.Play button{
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 7vh;
+    width: 12vw;
+    position: fixed;
+    bottom: 25vh;
+    left: 45vw;
+    font-size: 1rem;
+}
+.Play2 button{
+    border: 2px solid white;
+    border-radius: 5px;
+    height: 7vh;
+    width: 12vw;
+    position: fixed;
+    bottom: 10vh;
+    left: 45vw;
+    font-size: 1rem;
+}
+
+/* Text Area */
+h1{
+    position: absolute;
+    top: 55vh;
+    left: 35vw;
+    font-size: 5rem;
+    letter-spacing: 13px;
+    color: white;
+    font-weight: bolder;
+}
+h2{
+    position: fixed;
+    top: 50vh;
+    left: 42vw;
+    font-size: 3.5rem;
+    color: white;
+    font-weight: bolder;
+}
+h3{
+    position: absolute;
+    top: 70vh;
+    left: 35.2vw;
+    font-size: 2rem;
+    letter-spacing: 8px;
+    color: white;
+    font-weight: bolder;
+}
+h4{
+    position: fixed;
+    top: 60vh;
+    left: 46vw;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 1200;
+}
+h5{
+    position: fixed;
+    top: 47vh;
+    left: 43vw;
+    font-size: 4rem;
+    color: white;
+}
+.section{
+    background-color: rgba(0, 68, 41, 1);
+    color: white;
+    height: 53vh;
+    width: 20vw;
+    border: 3px solid white;
+    border-radius: 15px;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    bottom: 13vh;
+    right: 1.5vw;
+    display: none;
+    box-sizing: content-box;
+    font-size: 0.9rem;
+}
+.Play p{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 800;
+ }
+
+/* Hidden Area */
+.tie{
+    display: none;
+}
+.win{
+    display: none;
+}
+.lost{
+    display: none;
+}
+.next{
+    visibility: hidden;
+}
+ .CompShowRock{
+    visibility: hidden;
+ } 
+ .CompShowPaper{
+    visibility: hidden;
+ }
+.CompShowScissors{
+    visibility: hidden;
+ }
+.Play{
+    display: none;
+ }
+.WinCircle{
+    visibility: hidden;
+}
+
+
+/* Hurray Page Images Area */
+.stars{
+    position: absolute;
+    top: 5vh;
+    left: 30vw;
+    height: 45vh;
+    width: 40vw;
+}
+.vector{
+    position: relative;
+    top: 19vh;
+    left: 42vw;
+    height: 30vh;
+    width: 15vw;
+}
+
+/* Winner Circle */
+.winnerDeclaration1{
+    border: 2px;
+    border-radius: 100%;
+    height: 30vh;
+    width: 15vw;
+    background-color: #1da82b;
+    position: absolute;
+    top: 37vh;
+    left: 25vw;
+}
+.winnerDeclaration2{
+    border: 2px;
+    border-radius: 100%;
+    height: 37vh;
+    width: 18.5vw;
+    background-color: #1da82b90;
+    position: absolute;
+    top: 33.7vh;
+    left: 23.2vw;
+}
+.winnerDeclaration3{
+    border: 2px;
+    border-radius: 100%;
+    height: 44vh;
+    width: 22vw;
+    background-color: #2E9A2563;
+    position: absolute;
+    top: 31vh;
+    left: 21.5vw;
+}
+ 
