@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock | Paper | Scissors</title>
+</head>
+<body>
+    <!-- Score Baord Area -->
+        <div class="score_board">
+            <div class="name">
+                <p>
+                    ROCK <br>
+                    PAPER <br>
+                    SCISSORS
+                </p>
+            </div>
+            <div class="score">
+                <div class="comp">
+                    Computer <br> Score <br>
+                    <span class="pcScore">0</span>
+    
+                </div>
+                <div class="self">
+                    Your <br> Score <br>
+                    <span class="playerScore">0</span>
+                </div>
+            </div>
+        </div>
+        <div class="WinCircle">
+        <div class="winnerDeclaration3"></div>
+        <div class="winnerDeclaration2"></div>
+        <div class="winnerDeclaration1"></div>
+    </div>
+              
+        <!-- Lines Division -->
+        <div class="line">
+            <img id="line3" src="Images/Line 3.png">
+            <img id="line2" src="Images/Line 2.png" alt="">
+            <img id="line1" src="Images/Line 1.png" alt="">
+        </div> 
+
+        <!-- Games division -->
+        <div class="game">
+       <div id="Rock">
+            <img class="rock_bg" src="Images/stone background.png">
+            <img class="rock" src="Images/rock.png">
+            </div>
+            <div id="Paper">
+                <img class="paper_bg" src="Images/paper background.png">
+                <img class="paper" src="Images/paper.png">  
+            </div>
+        <div id="Scissors">
+            <img class="scissor_bg" src="Images/scissor bacground.png">
+            <img class="scissor" src="Images/scissor.png">
+            </div>
+      </div>
+            
+
+        <!-- CompChoose -->
+        <div class="CompChoose">
+            <div class="CompShowRock">
+            <img class="CompRock_bg" src="Images/stone background.png">
+            <img class="CompRock" src="Images/rock.png">
+        </div> 
+        <div class="CompShowPaper">
+            <img class="CompPaper_bg" src="Images/paper background.png">
+            <img class="CompPaper" src="Images/paper.png">
+        </div> 
+       <div class="CompShowScissors">
+            <img class="CompScissors_bg" src="Images/scissor bacground.png">
+            <img class="CompScissors" src="Images/scissor.png">
+        </div>
+        </div>
+
+        <!-- Play Again Button -->
+        <div class="Play">
+            <p class="youPicked"> YOU PICKED</p>
+            <p class="pcPicked">PC PICKED</p>
+          <a href="index.html"><button>PLAY AGAIN</button></a> 
+        </div>
+
+        <!-- Winner/Loser Declaration Area -->
+        <div class="win">
+            <h2>YOU WIN</h2>
+            <h4>AGAINST PC</h4>
+        </div>
+        <div class="lost">
+            <h2>You Lost</h2>
+            <h4>AGAINST PC</h4>
+        </div>
+        <div class="tie">
+            <h5>TIE UP</h5>
+        </div>
+        <!-- Next Button -->
+        <div class="next">
+            <a href="index2.html"> <button>NEXT</button> </a>
+         </div>
+
+          <!-- Rule Area -->
+  <div class="rules">
+    <button>RULES</button>
+    </div>
+<div class="section">
+    <p style="font-size: 2rem;">Game Rules</p><br>
+       <p>
+    Rock beats scissors, scissors <br> beats paper, and paper beats rock.<br><br>
+    Agree ahead of time whether <br> you'll count off "rock, paper, <br> scissor, shoot" or just "rock, paper, <br> scissor."<br><br>
+    Use rock, paper, scissors to <br> settle minor decisions or simply <br> play to pass the time.<br><br>
+    If both players lay down the <br> same hand, each player lays down <br> another hand.<br><br>
+    </p>
+<div class="Cancel">
+    <button>X</button>
+</div>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
