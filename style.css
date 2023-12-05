@@ -109,21 +109,21 @@ body{
     position: absolute;
     left: 42vw;
     top: 41vh;
-    height: 3.7vh;
+    height: 3.3vh;
     width: 16vw;
 }
 #line2{
     position: absolute;
-    left: 54vw;
+    left: 54.5vw;
     top: 50vh;
-    height: 21vh;
+    height: 27vh;
     width: 7vw;
 }
 #line3{
     position: absolute;
     left: 39.5vw;
     top: 49.5vh;
-    height: 23.3vh;
+    height: 25vh;
     width: 7vw;
 }
 .youPicked{
